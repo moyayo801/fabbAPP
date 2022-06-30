@@ -1,0 +1,41 @@
+   CollectionReference users = FirebaseFirestore.instance.collection('Utilisateurs');
+ getUsers() async {
+
+    var data=  await FirebaseFirestore.instance.collection('Utilisateurs').where('UID', isEqualTo: FirebaseAuth.instance.currentUser?.uid).limit(1).get();
+data.docs.forEach((element) {
+  users
+    .doc(element.id)
+    .update({'Favoris': '${widget.club}'})
+    .then((value) => print("User Updated"))
+    .catchError((error) => print("Failed to update user: $error"));
+});
+  }
+
+  Widget cancelButton = TextButton(
+    child: Text("Cancel"),
+    onPressed:  () {
+      Navigator.pop(context);
+    },
+  );
+  Widget continueButton = TextButton(
+    child: Text("Continue"),
+    onPressed:  () {
+getUsers().then((value) => 
+Navigator.pop(context),
+);
+
+AlertDialog alert = AlertDialog(
+    title: Text("AlertDialog"),
+    content: Text("Would you like to continue learning how to use Flutter alerts?"),
+    actions: [
+      cancelButton,
+      continueButton,
+    ],
+  );
+
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );

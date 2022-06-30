@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "440036821979",
+    "firebase_url": "https://yatosama-demo-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "yatosama-demo",
+    "storage_bucket": "yatosama-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440036821979:android:ac83bebf8c0026248375fe",
+        "android_client_info": {
+          "package_name": "com.fabbpfe.fabb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440036821979-7bmpqb7dop2g12t2hv623e96m82hee37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf9WIncnjGgqLFBu_BA1r9FOwiNocT2aY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440036821979-7bmpqb7dop2g12t2hv623e96m82hee37.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "440036821979-57j7lirilk4ra9b46pt6uib5n45e6to1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Adem.Demo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
